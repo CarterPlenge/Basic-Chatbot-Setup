@@ -37,7 +37,7 @@ pip install -r .\client\requirements.txt
 ```
 
 ## How to use
-### example.py
+### [example.py](./client/example.py)
 ```
 from voiceBot import VoiceBot
 import numpy as np
