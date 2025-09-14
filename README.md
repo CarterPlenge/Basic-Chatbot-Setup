@@ -3,6 +3,11 @@ The Goal of this project is to create a simple bot class that can do the followi
  - remember prior conversations
  - respond via text or audio
  - get input via text or audio
+This project is set up to utilized the following models
+ - Speech to Text: [faster-Whisper-large-v3](https://huggingface.co/Systran/faster-whisper-large-v3)
+ - Genrative AI: [Mistral: 7b-instruct](https://mistral.ai/news/announcing-mistral-7b)
+ - Text to Speech: [Kokoro](https://huggingface.co/hexgrad/Kokoro-82M)
+All of the models are run in Docker containers. If you want to use a different model, adjust the corresponding container, and everything should still work fine.
 
 ## Setup
 Software needed
@@ -88,6 +93,6 @@ As simple as I could make it without taking too much flexibility away.
 ## Other Notes
 
  - Context_id will make it only pull on memories with the same context_id. If you don't want that, just don't use it. Everything will default to "general" and will have the same context_id, making it do nothing.
- - All of the models are run in Docker containers. If you want to use a different model, adjust the corresponding container, and everything should still work fine. probably
  - This is intended to run locally using NVIDIA's CUDA. You might have to change it to use CPU. I don't know what you would have to do for an AMD GPU. I've never worked with one.
  - Since it's set up locally, if you want to run it remotely, you will have to make corresponding adjustments
+
