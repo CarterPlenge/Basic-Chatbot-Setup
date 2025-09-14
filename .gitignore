@@ -1,0 +1,12 @@
+env*
+test.wav
+sentence*
+.env
+*__pycache__*
+__pycache__/*
+*.pkl
+VSeeFace
+VSeeFace/*
+conversation_memory.json
+notes.txt
+test.py
