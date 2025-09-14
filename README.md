@@ -3,10 +3,12 @@ The Goal of this project is to create a simple bot class that can do the followi
  - remember prior conversations
  - respond via text or audio
  - get input via text or audio
+
 This project is set up to utilized the following models
  - Speech to Text: [faster-Whisper-large-v3](https://huggingface.co/Systran/faster-whisper-large-v3)
  - Genrative AI: [Mistral: 7b-instruct](https://mistral.ai/news/announcing-mistral-7b)
  - Text to Speech: [Kokoro](https://huggingface.co/hexgrad/Kokoro-82M)
+
 All of the models are run in Docker containers. If you want to use a different model, adjust the corresponding container, and everything should still work fine.
 
 ## Setup
