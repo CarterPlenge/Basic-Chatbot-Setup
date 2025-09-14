@@ -5,7 +5,7 @@ import numpy as np
 import base64
 
 app = FastAPI()
-pipeline = KPipeline(lang_code="a") # yeilds tuple(gs, ps, audio)
+pipeline = KPipeline(lang_code="a", device="cuda") # yeilds tuple(gs, ps, audio)
 
 def synthesize_sentence(sentence: str, voice="af_heart"):
     generator = pipeline(

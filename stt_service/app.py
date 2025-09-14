@@ -21,8 +21,7 @@ def load_model():
             logger.info("Loading Whisper model (base for reliability)...")
             from faster_whisper import WhisperModel
             
-            # Use base model with CPU for maximum compatibility
-            model = WhisperModel("base", compute_type="int8", device="cpu")
+            model = WhisperModel("base", compute_type="int8", device="cuda")
             logger.info("Whisper model loaded successfully")
             
         except ImportError as e:
