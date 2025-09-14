@@ -10,21 +10,21 @@ Software needed
  - [Ollama](https://ollama.com/)
  - [Python](https://www.python.org/)
 
-Termianl Commands
+Terminal Commands
 ```
 # 1: make sure your in your venv
 
 # 2: ollama model setup
 docker exec -it ollama ollama pull mistral:7b-instruct 
-# you can use other models as well, but you might have to adjust it
-# to handle model specific parameters
+# You can use other models as well, but you might have to adjust it
+# to handle model-specific parameters
 
 # 3: create/update custom model
 docker exec -it basic-chatbot-setup-ollama ollama create Dan -f /models/Modelfile
-# Dan is a name. name it whatever you want. 
+# Dan is a name. Name it whatever you want. 
 # re-run this command to update the model after changing the Modelfile
 
-# 3: install dependences
+# 3: install dependencies
 pip install -r .\client\requirements.txt
 
 ```
@@ -82,11 +82,12 @@ bot.ask(prompt, with_tts, context_id)
 bot.vad.run_vad() 
 bot.memory.clear_memory(context_id)
 ```
-Thats all. simple as I could make it without taking too much flexablity away.
+As simple as I could make it without taking too much flexibility away.
 
 
 ## Other Notes
 
- - Context_id will make it only pull on memories with the same context_id. If you dont want that just dont use it. Everything will default to "general" and will have the same context_id making it do nothing.
- - All of the models are ran in docker containers. If you want to use a differnt model adjust the corosponding container and everything should still work fine. probably
-
+ - Context_id will make it only pull on memories with the same context_id. If you don't want that, just don't use it. Everything will default to "general" and will have the same context_id, making it do nothing.
+ - All of the models are run in Docker containers. If you want to use a different model, adjust the corresponding container, and everything should still work fine. probably
+ - This is intended to run locally using NVIDIA's CUDA. You might have to change it to use CPU. I don't know what you would have to do for an AMD GPU. I've never worked with one.
+ - Since it's set up locally, if you want to run it remotely, you will have to make corresponding adjustments
