@@ -1,8 +1,5 @@
 # Basic Chatbot
-The Goal of this project is to create a simple bot class that can do the following while keeping its implementation simple. 
- - remember prior conversations
- - respond via text or audio
- - get input via text or audio
+This was a fragmented section of another project i did.
 
 This project is set up to utilized the following models
  - Speech to Text: [faster-Whisper-large-v3](https://huggingface.co/Systran/faster-whisper-large-v3)
