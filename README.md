@@ -1,5 +1,5 @@
 # Basic Chatbot
-This was a fragmented section of another project i did.
+This was a fragmented part of another project i did.
 
 This project is set up to utilized the following models
  - Speech to Text: [faster-Whisper-large-v3](https://huggingface.co/Systran/faster-whisper-large-v3)
